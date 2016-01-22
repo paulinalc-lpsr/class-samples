@@ -59,7 +59,7 @@ shawn = turtle.Turtle()
 # set a while loop too create only the top  part 4 times
 def makeFirstTopRow(myTurtle):
   count = 0 
-  while count < 4:
+  while count < 7:
     drawTopRhombus(shawn)
     shawn.penup()
     shawn.forward(35)
@@ -68,7 +68,7 @@ def makeFirstTopRow(myTurtle):
 # this will make the right side on the first, second and third row
 def makeFirstRightSideRow(myTurtle):
   count = 0
-  while count < 4:
+  while count < 7:
     drawRightRhombus(shawn)
     shawn.penup()
     shawn.left(150)
@@ -78,7 +78,7 @@ def makeFirstRightSideRow(myTurtle):
 # this wil create te left side of the cube after the top and the right side of the cube is created
 def makeFirstLeftSideRow(myTurtle):
   count = 0
-  while count < 4:
+  while count < 7:
     drawLeftRhombus(shawn)
     shawn.penup()
     shawn.right(90)
@@ -139,4 +139,4 @@ makeFirstRow(shawn)
 makeSecondRow(shawn)
 makeThirdRow(shawn)
 
-exitturtleonclick()
+turtle.exitonclick()

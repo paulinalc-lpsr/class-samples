@@ -1,0 +1,55 @@
+body{
+	background-color: #cef6f5;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+#Title{
+	font-size:32px;
+}
+#P1 {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+#Adele{
+	border: 2px black;
+	margin-top:40px;
+	margin-bottom: 10px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+#P2 {
+	
+	color: black;
+	font-size: 16px;
+}
+
+
+#P3{
+	color:black;
+	font-size:16px;
+}
+#JustinBieber{
+	margin-left:300px;
+	margin-right:300px;
+}
+#P4{
+	color:black;
+	font-size:16px;
+}
+#Drake{
+	margin-left:300px;
+	margin-right:300px;
+}
+#P5{
+	color:black;
+	font-size:16px;
+}
+#TwentyOnePilots{
+	margin-left:300px;
+	margin-right:300px;
+}
+a{
+	font-weight:bold;
+	color: purple;
+}

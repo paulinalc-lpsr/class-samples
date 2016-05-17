@@ -1,0 +1,87 @@
+
+body {
+    background: purple;
+}
+
+#wrapper  {
+    background: black;
+    width: 1050px;
+    height: 100%;
+    margin: auto;
+    font-size: 25px;
+ 
+}
+
+
+#header {
+    	display: block;
+    	margin: auto;
+	clear: both;
+	width: 1050px;
+   	height: 175px;   
+	color: white;
+}
+
+
+#logo {
+    margin-left: 140px;
+    width: 200px;
+    display: inline-block;
+    background: white;
+}
+#P1{
+	font-size: 40px;
+	font-family: Lobster;
+	color: white;
+}
+
+#banner {
+    display: inline-block;
+	width:700px;
+}
+
+
+#content {
+    background: purple;
+}
+
+#mainContent {
+    background: purple;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    width: 1000px;
+    background-color: black;
+}
+
+li  {
+    clear:both;
+    display: inline;
+    color: white;
+}
+
+
+#navigation {
+    clear: both;
+    text-align: left;
+    width: 195px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 9px;
+}
+
+#navigation li {
+    border: 1px solid purple;
+}
+
+#footer {
+    clear: both;
+    text-align: right;
+    background: black;
+    color: white;
+    padding: 15px;
+    font-size: 11px;
+}	

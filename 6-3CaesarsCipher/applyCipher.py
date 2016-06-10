@@ -1,43 +1,58 @@
+# imports what we need to get
+import string
+
 # applyCipher.py
 # A program to encrypt/decrypt user text
-# Using Caesar's Cipher
+# using Ceasar's Cipher
 #
-# Author: rc.lopez-castillo.paulina [at] leadps.org
+#Author: rc.lopez-castillo.paulina [at] leadps.org
 
-
-# makes a mapping of encoded alphabet to decoded alphabet
-# arguements: key
-# returns: dictionary of mapped letters
+#makes a mapping of encoded alphabet to decoded alphabet 
+#arguments: key
+#returns: dictionary of mapped letters
 def createDictionary(key):
+	lowerAlphabet = string.ascii_lowercase
+	upperAlphabet = string.ascii_uppercase
+	dictionary = {}
+	for a in range(0, len(lowerAlphabet)):
+		dictionary[upperAlphabet[(a + key) % 26]] = upperAlphabet[a] 	
+	for a in range(0, len(upperAlphabet)):
+		dictionary[lowerAlphabet[(a + key) % 26]] = lowerAlphabet[a]
+	dictionary[" "] = " "
+	return dictionary
 
-	#placeholder
-	return{}
-
-# It will give you the encoded message from the user
-# arguements: none
-# returns: encoded message 
+#gets the encrypted message from the user
+#arguments: none
+#returns: encoded message
 def getMessage():
-	pass
+	print("What message do you want to encode?")
+	message = raw_input()
+	return message	
 
 
-#for each letter in message, deocdes and records
-#arguements:encoded message, dictionary
-#returns: decoded message
-def decodedMessage:(message, dictionary)
-	pass
+#for each letter in the message; decodes and records
+#arguments: decoded message
+#returns: none
+def decodeMessage(message, dictionary):
+	decodedMessage = ""
+	for m in message:
+		decodedMessage = decodedMessage + dictionary[m] 
+		
+	return decodedMessage
+#outputs the decoded message to the terminal
+#arguments: decoded message
+#returns: none
+def printMessage(message):
+	print(message)
 
-#outputs the messgae to the terminal
-#arguements: decoded message
-#returns:none
-def printMessage(message): 	
-	pass
+#  execution starts here
 
-
-#ask user for key
+# ask for the key and message
 print("What key would you like to use to decode?")
-key=raw_input()
+key = int(raw_input())
 
-dictionary=createDictionary(key)
-encodedMessage=getMessage()
-decodedMessage=decodeMessage(encodedMessage, dictionary)
-printMessage(decodeMessage)
+dictionary = createDictionary(key)
+encodedMessage = getMessage()
+decodedMessage = decodeMessage(encodedMessage, dictionary)
+print("Okay, here is your secret message.")	
+printMessage(decodedMessage)
